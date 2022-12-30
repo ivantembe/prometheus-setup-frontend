@@ -5,7 +5,7 @@ MEMORY 2G
 
 RUN curl -sL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
-RUN sudo npm install npm -g
+RUN sudo npm install npm@8 -g
 
 ENV NODE_OPTIONS=--max-old-space-size=8192
 
